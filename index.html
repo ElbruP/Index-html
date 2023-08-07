@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>  
+ <title>Base</title>
+<link rel="stylesheet" href="reset_and_grid.css">
+  <style>
+    .section {
+      max-width: 1200px;
+      margin: 20px auto;
+      border: 1px solid white;
+      padding: 20px;
+      overflow: hidden;
+    }
+
+    .image {
+      float: left;
+      margin-right: 100px;
+      max-width: 1000px;
+    }
+
+    .image img {
+      max-width: 100%;
+      display: block;
+    }
+    
+    .text {
+      font-family: 'helvetica', monospace;
+      font-size: 18px;
+      margin-top: 10px;
+    }
+          
+    h2 {
+      font-weight: bold; 
+      font-size: 50px;
+      margin-bottom: 14px;
+    }
+     /*кнопка */
+    .btn-container {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      margin-top: 20px;
+    }
+
+    .btn-container button {
+      padding: 15px 30px;
+      font-size: 16px;
+      background-color: black;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    } 
+
+    .set-section {
+      max-width: 1200px;
+      margin: 20px auto;
+      border: 1px solid white;
+      padding: 20px;
+      overflow: hidden;
+    }
+
+    .set-text {
+      font-family: 'helvetica', monospace;
+      font-size: 18px;
+      margin-top: 10px;
+    }
+
+    h3 {
+      font-weight: bold; 
+      font-size: 31px;
+      margin-bottom: 14px;
+    }
+
+    /* стилі для контейнера */
+    .image-container {                        
+      text-align: center;
+      display: inline-block;
+      width: 240px;
+      margin: 20px;
+      background-color: #fafafa;
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    .image-container img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .image-container h4 {
+      font-weight: bold;
+      font-size: 15px;
+      margin-bottom: 14px;
+    }
+
+    .image-container p {
+      font-family: 'helvetica', monospace;
+      font-size: 14px;
+    }
+
+    
+    .view-button {
+      display: block;
+      margin: 20px auto 0;
+      padding: 10px 20px;
+      font-size: 14px;
+      background-color: #fafafa;
+      color: #000; 
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <section class="вауч">
+    <div class="section">
+      <div class="image">
+        <img src="Screenr.png" alt="barbi">
+      </div>
+      <div class="text">
+        <h2>Навіщо ми придумали ці сети?</h2>
+        <p> Спеціально до виходу нового фільму. Гортай карусель і вибирай той самий для замовлення та неймовірний барбі настрій - тобі забезпечений </p>
+        <div class="btn-container">
+          <button>Придбати Барбі сет</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+     <!--нова секція -->
+
+  <section class="set-section">
+    <div class="set-text">
+      <h3>Обери свій сет з чотирьох у цьому місяці</h3>
+    </div>
+
+    <!-- контейнери з зображенням -->
+
+    <div class="image-container">
+      <img src="Сет1.png" alt="Image 1">
+      <h4>Барбі сет №1</h4>
+      <p>Гель для душу з екстрактом півонії 
+        Олійка для кутикули </p>
+      <button class="view-button">Переглянути продукт</button> 
+    </div>
+
+    <div class="image-container">
+      <img src="Сет2.png" alt="Image 2">
+      <h4>Барбі сет №2</h4>
+      <p>Гель для брів Помадка для губ і щік 
+        Гліттер Атрія </p>
+      <button class="view-button">Переглянути продукт</button> 
+    </div>
+    <div class="image-container">
+      <img src="Сет3.png" alt="Image 3">
+      <h4>Барбі сет №3</h4>
+      <p>Морський Колеген Гель для душу
+        Манго-Гранат Олійка  </p>
+      <button class="view-button">Переглянути продукт</button>
+    </div>
+    <div class="image-container">
+      <img src="Сет4.png" alt="Image 4">
+      <h4>Барбі сет №4</h4>
+      <p>Свічка Strawberry Champagne
+        Твердий шампунь PINK CLAY</p>
+      <button class="view-button">Переглянути продукт</button> 
+    </div>
+  </section>
+</body>
+</html>
