@@ -2,8 +2,11 @@
 <html>
 <head>  
  <title>Base</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">    
 <link rel="stylesheet" href="reset_and_grid.css">
   <style>
+      
+      
     .section {
       max-width: 1200px;
       margin: 20px auto;
@@ -132,6 +135,35 @@
       width: calc(25% - 20px); 
       margin: 10px; 
     }
+      
+           /* ...  стилі ... */
+    body {
+      font-family: 'helvetica', monospace;
+      font-size: 16px;
+      margin: 0;
+      padding: 0;
+    }
+
+    
+    @media screen and (max-width: 767px) {
+      /* Стилі для моб-телефон*/
+      h2 {
+        font-size: 30px;
+        margin-bottom: 10px;
+      }
+      
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1024px) {
+   
+      .col {
+        width: calc(50% - 20px);
+      }
+        
+    .responsive-img {
+  max-width: 100%;
+  height: auto;
+}    
   </style>
 </head>
 <body>
