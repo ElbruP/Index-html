@@ -143,22 +143,48 @@
       margin: 0;
       padding: 0;
     }
+      
+      /* Для  1024px (ноутбуки) */
+    @media screen and (max-width: 1024px) {
+      .section, .set-section {
+        max-width: 90%; 
+      }
 
     
-    @media screen and (max-width: 767px) {
-      /* Стилі для моб-телефон*/
-      h2 {
-        font-size: 30px;
-        margin-bottom: 10px;
+    /* Для  1920, 1440, 1280,  */
+    @media screen and (min-width: 1024px) {
+      .section, .set-section {
+        max-width: 960px; 
       }
-      
+
+      .image {
+        max-width: 800px; 
+      }
+
+      .image-container {
+        width: 240px;
+        margin: 20px;
+      }
     }
 
-    @media screen and (min-width: 768px) and (max-width: 1024px) {
-   
+    /* Для  768 */
+    @media screen and (max-width: 768px) {
+      .section, .set-section {
+        padding: 10px; 
+      }
+
       .col {
         width: calc(50% - 20px);
       }
+    }
+
+    /* Для  378 */
+    @media screen and (max-width: 378px) {
+      .col {
+        width: 100%; 
+        margin: 10px 0;
+      }
+    }
         
     .responsive-img {
   max-width: 100%;
