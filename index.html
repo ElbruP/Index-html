@@ -138,10 +138,27 @@
       
 
 
+/* Для разрешения 768px */
 @media (max-width: 768px) {
   .image {
-    margin: 0 auto; 
-    max-width: 100%; 
+    float: none;
+    margin: 20px auto 0;
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .text {
+    text-align: center;
+    margin: 0;
+  }
+  
+  .btn-container {
+    justify-content: center;
+  }
+  
+  .col {
+    width: 100%;
+    margin: 0;
   }
 }
 
@@ -151,6 +168,8 @@
   .image img {
     max-width: 960px;  
     height: 220px; 
+    float: none;
+    margin: 0 auto; 
 }
     
         /* ...  стилі ... */
